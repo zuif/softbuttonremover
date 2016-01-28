@@ -1,0 +1,151 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/peak">
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:id="@+id/layoutForScroll"
+                android:orientation="vertical">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="15sp"
+       android:layout_marginBottom="16dp"
+       android:id="@+id/intro"
+       android:text="Welcome to soft button remover, we require 3 steps to successfully remove your soft keys. Please head on to documentation for further details about each steps"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="1st step"
+        android:layout_below="@+id/intro"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/firststep"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First, we need root access, please click the below button to check if you have root permissions, if you do have, we will acquire root permissions for this app as well"
+        android:layout_below="@+id/firststep"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/firstexplain"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstexplain"
+        android:layout_centerHorizontal="true"
+        android:text="root access"
+        android:textColor="#404040"
+        android:onClick="rootAccess"
+        android:background="#00af2100"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/rootbutton"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="2nd step"
+        android:layout_below="@+id/rootbutton"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/secondstep"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondstep"
+        android:text="Congratulations! You have root access, you are one step closer on getting your soft button removed for good, now I need to check whether you have a backup for navigation or not. Remember, it will be very hard to navigate without soft keys, so you either need a floating soft keys or the one I recommend - LMT launcher"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/seconddescription"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/figured"
+    android:layout_below="@id/seconddescription"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I can figure it out"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:background="#00af2100"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+         />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00af2100"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:text="Options"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:text="Learn More"
+        android:background="#00af2100"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        />
+            </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/figured"
+        android:text="Final step"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="true"
+        android:id="@+id/finalstep"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="You are in the final step, if you have successfully checked and finished above stages, you can click the button below to get your soft buttons removed. Remember - YOU WILL REQUIRE REBOOT in order to see changes"
+        android:layout_below="@+id/finalstep"
+        android:id="@+id/finaldescription"
+        android:layout_marginBottom="16dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/finaldescription"
+        android:layout_centerHorizontal="true"
+        android:onClick="addcode"
+        android:text="remove soft keys" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
